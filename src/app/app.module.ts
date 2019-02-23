@@ -4,6 +4,7 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { PostListItemComponent } from './post-list-component/post-list-item/post-list-item.component';
 import { PostListComponentComponent } from './post-list-component/post-list-component.component';
+import {PostService} from './services/post.service';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,7 @@ import { PostListComponentComponent } from './post-list-component/post-list-comp
   imports: [
     BrowserModule
   ],
-  providers: [],
+  providers: [PostService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
